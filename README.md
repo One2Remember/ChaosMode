@@ -1,5 +1,5 @@
 # ChaosMode
-A package that can forcibly introduce non-deterministic behavior to Non-Deterministic C++ STL data structures for debugging flaky tests, loosely inspired by Mozilla ChaosMode and the NonDex tool.
+A package that can forcibly introduce non-deterministic behavior to Non-Deterministic C++ STL data structures for debugging flaky tests, loosely inspired by [Mozilla ChaosMode](https://hg.mozilla.org/mozilla-central/file/tip/mfbt/ChaosMode.h) and the [NonDex](https://github.com/TestingResearchIllinois/NonDex) tool.
 
 ### Prior Work
 This project was made as an attempt to construct a C++ equivalent to the [NonDex](https://github.com/TestingResearchIllinois/NonDex) flaky-test debugging tool. To understand the importance of this work, please check out the README on the original NonDex repo. 
