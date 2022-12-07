@@ -2,7 +2,7 @@
 A package that can forcibly introduce non-deterministic behavior to Non-Deterministic C++ STL data structures for debugging flaky tests, loosely inspired by [Mozilla ChaosMode](https://hg.mozilla.org/mozilla-central/file/tip/mfbt/ChaosMode.h) and the [NonDex](https://github.com/TestingResearchIllinois/NonDex) tool.
 
 ### Prior Work
-This project was made as an attempt to construct a C++ equivalent to the [NonDex](https://github.com/TestingResearchIllinois/NonDex) flaky-test debugging tool. To understand the importance of this work, please check out the README on the original NonDex repo. 
+This project was made as an attempt to construct a C++ equivalent to the [NonDex](https://github.com/TestingResearchIllinois/NonDex) flaky-test debugging tool for projects using Java JDK8. To understand the importance of this work, please check out the README on the original NonDex repo. 
 
 ### Basic Usage
 This code gives the user access to chaotic versions of the C++ Standard Template Library [std::unordered_set](https://cplusplus.com/reference/unordered_set/unordered_set/) and [std::unordered_map](https://cplusplus.com/reference/unordered_map/unordered_map/). In the makefile provided, a flag called chaos_mode can be set to either 0 or 1. 
