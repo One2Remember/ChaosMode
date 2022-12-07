@@ -12,7 +12,7 @@ If the flag is set to 1, any instance of an UnorderedMap or UnorderedSet will co
 If the flag is not set to 1, the UnorderedMap and UnorderedSet classes will simply compile as aliases to the C++ STL base versions, and any template parameters are passed down to the base class with experimentally negligible overhead.
 
 ### Integrating Code into Larger Projects
-Integrating this code into your project is a simple two-step process.
+Integrating this code into your project is a simple three-step process.
 1) Clone the repository to your desired location, navigate to the project directory, and run 'make'. 'make clean' will clean the directory as expected, leaving only the source code and README. For projects that use gmake, or another build pattern, integrate the makefile however you normally would. If this is being integrated into a larger makefile, chaos_mode should be compiled before the rest of the project files are compiled.
 2) Refactor the project to replace any usages of std::unordered_map with UnorderedMap and std::unordered_set with UnorderedSet. The class interfaces are identical, so no other changes are required aside from the #include statements.
 3) Swap any #include<unordered_x> with #include "[path_to_chaos_mode]/UnorderedX"
